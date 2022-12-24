@@ -1,0 +1,72 @@
+
+.about{
+    width: 93%;
+    margin:0rem auto;
+    
+}
+
+.about .row{
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 30rem;
+    padding: 0.8rem;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:var(--green);
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 30rem;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    flex: 1 1 10rem;
+    
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+
+    
+    text-align: center;
+    padding: 2rem;
+    
+    
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--light-color);
+}
+h1{
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+    width: 20rem;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem;
+    
+}

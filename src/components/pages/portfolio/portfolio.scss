@@ -1,0 +1,78 @@
+.portfolio{
+    width: 93%;
+    margin:0rem auto;
+    
+    
+
+    }
+.portfolio .boxContainer{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem,1fr));
+}
+h1{
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 20rem;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem;
+    color: var(--black);
+}
+h1 span{
+    color: var(--green);
+}
+.box{
+    overflow: hidden;
+    margin: 1.5rem;
+    
+    cursor: pointer;
+    color: var(--black);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.7rem;
+}
+.box .imgHolder{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.box .imgHolder img{
+    width: 100%;
+    height: 100%;
+}
+.box .contentHolder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    transform: rotate(180deg) scale(0);
+    transition: 0.3s;
+}
+.contentHolder .name{
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+.contentHolder .type{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.contentHolder .link{
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    padding: 0.4rem;
+}
+.box:hover .contentHolder{
+    transform: rotate(360deg) scale(1.1);
+
+
+}
+.box:hover .imgHolder{
+    transform: scale(3);
+    opacity: 0;
+}
