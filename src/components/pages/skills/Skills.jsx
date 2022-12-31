@@ -34,30 +34,17 @@ export default function Skills() {
     skillLavel:'intermediate' ,
     skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
  },
- {
-  skillId:'5',
-  skillType: 'Frontend',
-  skillName:'Tailwind CSS' ,
-  skillLavel:'intermediate' ,
-  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
-},
+ 
 {
-  skillId:'6',
+  skillId:'5',
   skillType: 'Frontend',
   skillName:'Javascript' ,
   skillLavel:'intermediate' ,
   skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
 },
-{
-  skillId:'7',
-  skillType: 'Frontend',
 
-  skillName:'Jquery' ,
-  skillLavel:'intermediate' ,
-  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
-},
 {
-  skillId:'8',
+  skillId:'6',
   skillType: 'Frontend',
 
   skillName:'React Js' ,
@@ -92,18 +79,11 @@ export default function Skills() {
   skillId:'4',
   skillType: 'Backend',
 
-  skillName:'Python' ,
+  skillName:'Mongoose' ,
   skillLavel:'intermediate' ,
   skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
 },
-{
-  skillId:'5',
-  skillType: 'Backend',
 
-  skillName:'Django' ,
-  skillLavel:'intermediate' ,
-  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium.Id autem provident laborum quae, dieaque temporibus!'
-},
 {
   skillId:'6',
   skillType: 'Backend',
@@ -111,20 +91,8 @@ export default function Skills() {
   skillLavel:'intermediate' ,
   skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
 },
-{
-  skillId:'7',
-  skillType: 'Backend',
-  skillName:'Firebase' ,
-  skillLavel:'intermediate' ,
-  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
-},
-{
-  skillId:'1',
-  skillType: 'MobailApps',
-  skillName:'React Native' ,
-  skillLavel:'intermediate' ,
-  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
-},
+
+
  
   ]
   const changeSkill=(skill)=>{

@@ -9,11 +9,11 @@ export default function About() {
 <div class="row">
 
     <div class="info">
-        <h3> <span> name : </span> Moshiur Rahman  </h3>
-        <h3> <span> age : </span> 19 </h3>
+        <h3> <span> Name : </span> Moshiur Rahman  </h3>
+        <h3> <span> Age : </span> 21 </h3>
         
-        <h3> <span> post : </span>Mern Stack Developer</h3>
-        <h3> <span> language : </span> Bangla</h3>
+        <h3> <span> Post : </span>Mern Stack Developer</h3>
+        <h3> <span> Language : </span> Bangla,English</h3>
         <a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
 
@@ -25,7 +25,7 @@ export default function About() {
         </div>
 
         <div className="box">
-            <span>100+</span>
+            <span>50+</span>
             <h3>porject completed</h3>
         </div>
 
