@@ -49,7 +49,7 @@ export default function Portfolio() {
     <div className='portfolio' id='portfolio'>
       <h1>My <span >Portfolio</span></h1>
       <div className='boxContainer'>
-        {projects.map(item => <div className="box">
+        {projects.map(item => <div className="boxs">
       <div className="imgHolder">
         <img src={item.img} alt="" />
 
