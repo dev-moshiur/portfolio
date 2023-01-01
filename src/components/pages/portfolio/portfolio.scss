@@ -25,54 +25,67 @@ h1 span{
     overflow: hidden;
     margin: 1.5rem;
     
-    cursor: pointer;
+    
     color: var(--black);
-    position: relative;
+    display: flex;
+    flex-direction: column;
     box-shadow: var(--box-shadow);
     border-radius: 0.7rem;
 }
 .box .imgHolder{
     width: 100%;
     height: 100%;
-    transition: 0.3s;
+    
 }
 .box .imgHolder img{
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 .box .contentHolder{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--bg-color);
-    transform: rotate(180deg) scale(0);
-    transition: 0.3s;
+    
 }
 .contentHolder .name{
     font-size: 1.6rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+    font-weight: 600;
 }
 .contentHolder .type{
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
-.contentHolder .link{
-    color: var(--green);
-    box-shadow: var(--box-shadow);
-    padding: 0.4rem;
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+    
 }
-.box:hover .contentHolder{
-    transform: rotate(360deg) scale(1.1);
+.links a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+.links a>*:first-child{
+    transform: scale(1.3);
+    padding-bottom: 0.1rem;
+}
+
+// .box:hover .contentHolder{
+//     transform: rotate(360deg) scale(1.1);
 
 
-}
-.box:hover .imgHolder{
-    transform: scale(3);
-    opacity: 0;
-}
+// }
+// .box:hover .imgHolder{
+//     transform: scale(3);
+//     opacity: 0;
+// }
