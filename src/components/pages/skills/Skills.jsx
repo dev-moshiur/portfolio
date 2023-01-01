@@ -102,7 +102,7 @@ export default function Skills() {
   
   
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
       <h1> My <span>Skills</span> </h1>
       <div className="skilltoggle">
         <span onClick={()=>{changeSkill('Frontend');setactiveSkill('frontEnd')}} className={(activeSkill==='frontEnd')? "skillType activate":"skillType"}>Frontend</span>

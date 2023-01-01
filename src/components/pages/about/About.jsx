@@ -3,7 +3,7 @@ import './about.scss';
 
 export default function About() {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <h1> <span>about</span> me </h1>
 
 <div class="row">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Facebook, GitHub, LinkedIn, MessageSharp, WhatsApp } from '@material-ui/icons';
 export default function Home() {
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <div className="content">
 
           <h3>HI THERE !</h3>

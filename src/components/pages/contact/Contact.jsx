@@ -5,7 +5,7 @@ import './contact.scss';
 export default function Contact() {
   
   return (
-    <div className='contact-me'>
+    <div className='contact-me' id='contact'>
      <h1><span>Contact</span> Me</h1>
       <div className='contactFormAndAddress'>
         <div className="address">

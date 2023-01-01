@@ -46,7 +46,7 @@ export default function Portfolio() {
     }
   ]
   return (
-    <div className='portfolio'>
+    <div className='portfolio' id='portfolio'>
       <h1>My <span >Portfolio</span></h1>
       <div className='boxContainer'>
         {projects.map(item => <div className="box">

@@ -37,11 +37,11 @@ export default function Header() {
       
     </div>
     <div className={activeMenu? 'navBar navActive':'navBar'}>
-    <Link onClick={menuToggle} to="/">Home</Link>
-    <Link onClick={menuToggle} to="/about">About Me</Link>
-    <Link onClick={menuToggle} to="/skills">My Skills</Link>
-    <Link onClick={menuToggle} to="/portfolio">Portfolio</Link>
-    <Link onClick={menuToggle} to="/contact">Contact Me</Link>
+    <a onClick={menuToggle} href="#home">Home</a>
+    <a onClick={menuToggle} href="#about">About Me</a>
+    <a onClick={menuToggle} href="#skills">My Skills</a>
+    <a onClick={menuToggle} href="#portfolio">Portfolio</a>
+    <a onClick={menuToggle} href="#contact">Contact Me</a>
     </div>
     </>
   )
