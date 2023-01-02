@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import './skills.scss';
 export default function Skills() {
-  const [skill,setskill] = useState('Frontend');
-
-  const [activeSkill, setactiveSkill] = useState('frontEnd')
- 
+  
   const data=[
     {
        skillId:'1',
@@ -95,70 +92,25 @@ export default function Skills() {
 
  
   ]
-  const changeSkill=(skill)=>{
-    setskill(skill)
-    
-  }
-  
   
   return (
     <div className='skills' id='skills'>
       <h1> My <span>Skills</span> </h1>
-      <div className="skilltoggle">
-        <span onClick={()=>{changeSkill('Frontend');setactiveSkill('frontEnd')}} className={(activeSkill==='frontEnd')? "skillType activate":"skillType"}>Frontend</span>
-        <span onClick={()=>{changeSkill('Backend');setactiveSkill('backEnd')}} className={(activeSkill==='backEnd')? "skillType activate":"skillType"}>Backend</span>
-        <span  onClick={()=>{changeSkill('MobailApps');setactiveSkill('mobailApps')}} className={(activeSkill==='mobailApps')? "skillType activate":"skillType"}>Mobail Apps</span>
-      </div>
+      
 
       <div class="box-container">
-        {data.map((item)=>{
-          if(skill=='Frontend' && item.skillType=='Frontend'){
+        {data.map((item,index)=>
           
-          return( <div class="box">
-            <i  >{item.skillId}</i>
+          
+           <div class="box">
+            <i  >{index +1}</i>
             <h3>{ item.skillName}
             </h3>
             <span>{item.skillLavel}</span>
             
             <p>{item.skillDescribtion}</p>
         </div>)
-          }
-          else if(skill=='Backend' && item.skillType=='Backend'){
-            return( <div class="box">
-            <i  >{item.skillId}</i>
-            <h3>{ item.skillName}
-            </h3>
-            <span>{item.skillLavel}</span>
-            
-            <p>{item.skillDescribtion}</p>
-        </div>)
-
-
-
-          }
-          else if(skill=='MobailApps' && item.skillType=='MobailApps'){
-            return( <div class="box">
-            <i  >{item.skillId}</i>
-            <h3>{ item.skillName}
-            </h3>
-            <span>{item.skillLavel}</span>
-            
-            <p>{item.skillDescribtion}</p>
-        </div>)
-
-
-
-          }
-          
-          
-         
-})}
-    
-        
-    
-        
-        
-    
+}
       </div>
     </div>
   )

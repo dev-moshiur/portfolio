@@ -25,9 +25,9 @@ export default function Contact() {
      <h1><span>Contact</span> Me</h1>
       <div className='contactFormAndAddress'>
         <div className="address">
-          <div><span className='addressName'><EmailSharp/><i>Email</i></span>masud42215639@gmail.com</div>
-          <div><span className='addressName'><Phone/><i>Number</i></span>01725256642</div>
-          <div><span className='addressName'><Phone/><i>Number</i></span>01885355627</div>
+          <div><span className='addressName'><EmailSharp/><i>Email</i></span>dev.moshiurr@gmail.com</div>
+          <div><span className='addressName'><Phone/><i>Number</i></span>+880 1725256642</div>
+          <div><span className='addressName'><Phone/><i>Number</i></span>+880 01885355627</div>
           <div><span className='addressName'><HomeSharp/><i>address</i></span>Nijpara, Birgonj, Dinajpur</div>
           
 

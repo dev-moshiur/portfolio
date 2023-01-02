@@ -14,7 +14,7 @@ export default function Home() {
           <span className='heading'>I'M <span className='name'>Moshiur Rahman</span></span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
           </p>
-         <Link to='/about' className="btn">about me </Link>
+         <a href='#about' className="btn">about me </a>
         </div>
         <div className="imgAndIcon">
           <div className="img">
@@ -24,7 +24,7 @@ export default function Home() {
             <Facebook/>
             <LinkedIn/>
             <GitHub/>
-            <MessageSharp/>
+            
             <WhatsApp/>
           </div>
 

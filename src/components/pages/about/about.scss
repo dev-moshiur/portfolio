@@ -29,6 +29,24 @@
     font-weight: normal;
 }
 
+.about .row .info a{
+
+    text-decoration: none;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+    background: var(--green);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    margin-bottom: 0.6rem;
+    display: block;
+    width: fit-content;
+    margin: 0.6rem auto;
+
+}
+
 .about .row .info h3 span{
     color:var(--green);
     padding:0 .5rem;

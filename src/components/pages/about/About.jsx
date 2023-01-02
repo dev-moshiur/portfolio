@@ -1,3 +1,4 @@
+import { ArrowDownward } from '@material-ui/icons';
 import React from 'react';
 import './about.scss';
 
@@ -14,7 +15,7 @@ export default function About() {
         
         <h3> <span> Post : </span>Mern Stack Developer</h3>
         <h3> <span> Language : </span> Bangla,English</h3>
-        <a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+        <a href="#"> Download CV <ArrowDownward/></a>
     </div>
 
     <div className="counter">
