@@ -1,8 +1,24 @@
 import { EmailSharp, HomeSharp, Phone } from '@material-ui/icons';
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.scss';
 
 export default function Contact() {
+  const form = useRef();
+  const [message, setMessage] = useState('')
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setMessage('')
+
+    emailjs.sendForm('service_z5tlvwn', 'template_4nbexqj', form.current, 'ArZTB-tf-ymPvbz_g')
+      .then((result) => {
+        setMessage('Message sent successfully');
+      }, (error) => {
+        setMessage('Something went wrong')
+      });
+      form.current.reset()
+  };
   
   return (
     <div className='contact-me' id='contact'>
@@ -16,12 +32,12 @@ export default function Contact() {
           
 
         </div>
-        <form action="
-        " className="contactForm">
+        <form ref={form} onSubmit={sendEmail} className="contactForm">
 
           <input placeholder='your name..' type="text" name="name" id="name" />
           <input placeholder='your email' type="email" name="email" id="email" />
-          <textarea placeholder='write a massage' name="massage" id="massage" rows={6}></textarea>
+          <textarea placeholder='write a massage' name="message" id="massage" rows={6}></textarea>
+          {message && <div className='status'>{message}</div>}
           <input id='send' type="submit" value="Send" />
 
         </form>
