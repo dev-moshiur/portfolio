@@ -39,12 +39,27 @@ export default function Skills() {
   skillLavel:'intermediate' ,
   skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
 },
+{
+  skillId:'5',
+  skillType: 'Frontend',
+  skillName:'Typescript' ,
+  skillLavel:'intermediate' ,
+  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
+},
 
 {
   skillId:'6',
   skillType: 'Frontend',
 
   skillName:'React Js' ,
+  skillLavel:'intermediate' ,
+  skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
+},
+{
+  skillId:'6',
+  skillType: 'Frontend',
+
+  skillName:'Redux' ,
   skillLavel:'intermediate' ,
   skillDescribtion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!'
 },
