@@ -1,104 +1,96 @@
-.contact-me{
-    width: 93%;
-    margin: 0 auto; 
-    margin-bottom: 4rem;
-    
+.contact-me {
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
-.contactFormAndAddress{
-    display: flex;
-    
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    column-gap: 2rem;
-    row-gap: 2rem;
-   
-    
+.contactFormAndAddress {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
- .contactForm{
-     flex: 1 1 30rem;
-    
-    box-shadow: var(--box-shadow);
-    
-    border-radius: 0.7rem;
-    display: flex;
-    flex-direction: column;
+.contactForm {
+  flex: 1 1 30rem;
+
+  box-shadow: var(--box-shadow);
+
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
 }
-.contactFormAndAddress .contactForm>*{
-    width: 82%;
-    margin: 1.5rem auto;
-    border-radius: 0.3rem;
-    background: var(--bg-color);
-    border: none;
-    box-shadow: var(--box-shadow-inset);
-    margin-bottom: 0.5rem;
-    padding: 0.7rem 0.8rem;
-    font-size: 1.6rem;
-    color: var(--black);
-    outline: none;
+.contactFormAndAddress .contactForm > * {
+  width: 82%;
+  margin: 1.5rem auto;
+  border-radius: 0.3rem;
+  background: var(--bg-color);
+  border: none;
+  box-shadow: var(--box-shadow-inset);
+  margin-bottom: 0.5rem;
+  padding: 0.7rem 0.8rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  outline: none;
 }
-.contactForm #send{
-    background: var(--green);
-    color: var(--bg-color);
-    box-shadow: none;
-    font-size: 1.7rem;
-    font-weight: 700;
-    cursor: pointer;
-    margin-bottom: 2rem;
+.contactForm #send {
+  background: var(--green);
+  color: var(--bg-color);
+  box-shadow: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 2rem;
 }
 
-.addressName{
-    color: var(--green);
-   
+.addressName {
+  color: var(--green);
 }
 
-.address{
-    flex: 1 1 20rem;
-    color: var(--black);
-    
-    box-shadow: var(--box-shadow);
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
-    
-    padding: 1.5%;
-    border-radius: 0.7rem;
-    column-gap: 0.8rem;
-    row-gap: 0.5rem;
-    align-content: flex-start;
-    height: fit-content;
-    word-wrap: break-word;
+.address {
+  flex: 1 1 20rem;
+  color: var(--black);
+
+  box-shadow: var(--box-shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+  padding: 1.5%;
+  border-radius: 0.7rem;
+  column-gap: 0.8rem;
+  row-gap: 0.5rem;
+  align-content: flex-start;
+  height: fit-content;
+  word-wrap: break-word;
 }
-.address>* {
-    font-size: 1.4rem;
-    margin-top: 0.9rem;
-    border-radius: 0.5rem;
+.address > * {
+  font-size: 1.4rem;
+  margin-top: 0.9rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0.9rem;
+  word-wrap: break-word;
+  box-shadow: var(--box-shadow);
+  span {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-
-    padding: 0.9rem;
-    word-wrap: break-word;
-    box-shadow: var(--box-shadow);
-    span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        i{
-            font-size: 1.2rem;
-            margin-bottom: 0.4rem;
-        }
-
-        &>*{
-            &:first-child{
-                font-size: 3.0rem;
-                margin-bottom: 0.7rem;
-            }
-            
-        }
+    i {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
     }
-}
 
+    & > * {
+      &:first-child {
+        font-size: 3rem;
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+}

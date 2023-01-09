@@ -3,77 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>My Personal Portfolio Website</title>
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
       }
-      ::-webkit-scrollbar-thumb{
-  background: var(--green);
-  border-radius: 0.6rem;
-}
-::-webkit-scrollbar{
-  background: var(--bg-color);
-  width:1rem;
-}
-
-      body{
-       font-family:'Roboto', sans-serif;
-       text-decoration: none;
-       background: var(--bg-color);
+      ::-webkit-scrollbar-thumb {
+        background: var(--green);
+        border-radius: 0.6rem;
       }
-      
-      html{
+      ::-webkit-scrollbar {
+        background: var(--bg-color);
+        width: 1rem;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        background: var(--bg-color);
+      }
+
+      html {
         font-size: 62.5%;
       }
-      :root{
-    --green:#27ae60;
-    --black:#444;
-    --light-color:#777;
-    --bg-color:#e6e6e6;
-    --border:.1rem solid rgba(0,0,0,.2);
-    --box-shadow:.4rem .4rem 1rem #ccc,
-                -.4rem -.4rem 1rem #fff;
-    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
-                      -.4rem -.4rem 1rem #fff inset;
-}
-body.active{
-    --green:#f9ca24;
-    --black:#fff;
-    --light-color:#ddd;
-    --bg-color:#222;
-    --border:.1rem solid rgba(0,0,0,.4);
-    --box-shadow:.4rem .4rem 1rem #111,
-                -.4rem -.4rem 1rem #333;
-    --box-shadow-inset:.4rem .4rem 1rem #111 inset,
-                      -.4rem -.4rem 1rem #333 inset;
-}
+      :root {
+        --green: #27ae60;
+        --black: #444;
+        --light-color: #777;
+        --bg-color: #e6e6e6;
+        --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+        --box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+        --box-shadow-inset: 0.4rem 0.4rem 1rem #ccc inset,
+          -0.4rem -0.4rem 1rem #fff inset;
+      }
+      body.active {
+        --green: #f9ca24;
+        --black: #fff;
+        --light-color: #ddd;
+        --bg-color: #222;
+        --border: 0.1rem solid rgba(0, 0, 0, 0.4);
+        --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+        --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
+          -0.4rem -0.4rem 1rem #333 inset;
+      }
 
- *::selection{
-    background:var(--yellow);
-    color:#333;
-}
-@media (max-width:768px){
-
-html{
-    font-size: 55%;
-}
-
-}
-@media (max-width:330px){
-
-html{
-    font-size: 42%;
-}
-
-}
+      *::selection {
+        background: var(--yellow);
+        color: #333;
+      }
+      @media (max-width: 768px) {
+        html {
+          font-size: 55%;
+        }
+      }
+      @media (max-width: 330px) {
+        html {
+          font-size: 42%;
+        }
+      }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
   </body>
 </html>

@@ -1,135 +1,109 @@
-.skills{
-   width: 93%;
-   margin: 0 auto;
-   justify-content: center;
-   align-content: center;
-   display: flex;
-   flex-direction: column;
+.skills {
+  width: 93%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
 
-   h1{
-        font-size: 2rem;
-        margin: 2rem auto;
-        text-align: center;
-        width: 20rem;
-        box-shadow: var(--box-shadow);
-        padding: 0.5rem;
-        color: var(--black);
-    span{
-        color: var(--green);
+  h1 {
+    font-size: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    width: 20rem;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem;
+    color: var(--black);
+    span {
+      color: var(--green);
+    }
+  }
+  .skilltoggle {
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    width: 250px;
+    display: flex;
+    margin-bottom: 1.8rem;
+    align-items: center;
+    padding: 1.2rem;
+    justify-content: space-around;
+
+    &.activate {
+      box-shadow: var(--box-shadow);
     }
 
+    & > * {
+      font-size: 1.6rem;
+      color: var(--black);
+      padding: 0.5rem;
 
-  }
-  .skilltoggle{
-        margin: 0 auto;
+      box-shadow: var(--box-shadow-inset);
+      transition: 0.4s;
+      cursor: pointer;
+      &.activate {
         box-shadow: var(--box-shadow);
-        width: 250px;
-        display: flex;
-        margin-bottom: 1.8rem;
-        align-items: center;
-        padding: 1.2rem;
-        justify-content: space-around;
+      }
 
-        &.activate{
-            box-shadow: var(--box-shadow);
-        }
-
-    &>*{
-        font-size: 1.6rem;
-        color: var(--black);
-        padding: 0.5rem;
-    
-        box-shadow: var(--box-shadow-inset);
-        transition: 0.4s;
-        cursor: pointer;
-        &.activate{
-            box-shadow: var(--box-shadow);
-        }
-
-        &:hover{
-            box-shadow: var(--box-shadow);
-    
-        }
-
-        }
-    
-    
-}
-.box-container{
+      &:hover {
+        box-shadow: var(--box-shadow);
+      }
+    }
+  }
+  .box-container {
     display: grid;
 
     gap: 2rem;
-    
-    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     justify-content: center;
     align-content: center;
-    padding:1rem 0;
-    
+    padding: 1rem 0;
+
     margin: 1rem auto;
-    .box{
-        padding: 1rem;
-        overflow: hidden;
-        
-        border-left: var(--border);
-        position: relative;
-        box-shadow: var(--box-shadow);
+    .box {
+      padding: 1rem;
+      overflow: hidden;
 
-        h3{
-            font-size: 2rem;
-            color:var(--black);
-            
-            padding-bottom: 1.5rem;
-            padding-top:0.8rem;
-            text-align:center;
-            
-            
-        }
-        span{
-            font-size: 1.3rem;
-            background:var(--bg-color);
-            color:var(--black);
-            border: var(--border);
-            border-radius: 5rem;
-            padding:.5rem 2.5rem;
-            text-align:left !important;
-        }
-        p{
-            font-size: 1.4rem;
-            color:var(--black);
-            padding: 1rem 0;
-        }
-        i{
-            position: absolute;
-            opacity: 0.8;
-            top: -1rem;
-            left:-0.5rem;
-            height:5rem;
-            width: 5rem;
-            border-radius: 50%;
-            line-height: 5rem;
-            text-align: center;
-            font-size: 2rem;
-            color:var(--black);
-            background:var(--green);
-        }
-        
-        
+      border-left: var(--border);
+      position: relative;
+      box-shadow: var(--box-shadow);
+
+      h3 {
+        font-size: 2rem;
+        color: var(--black);
+
+        padding-bottom: 1.5rem;
+        padding-top: 0.8rem;
+        text-align: center;
+      }
+      span {
+        font-size: 1.3rem;
+        background: var(--bg-color);
+        color: var(--black);
+        border: var(--border);
+        border-radius: 5rem;
+        padding: 0.5rem 2.5rem;
+        text-align: left !important;
+      }
+      p {
+        font-size: 1.4rem;
+        color: var(--black);
+        padding: 1rem 0;
+      }
+      i {
+        position: absolute;
+        opacity: 0.8;
+        top: -1rem;
+        left: -0.5rem;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: var(--black);
+        background: var(--green);
+      }
     }
+  }
 }
-    
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,139 +1,124 @@
-.header{
-    background-color:var(--bg-color);
-    color:var(--black);
-    display: flex;
-    height: 70px;
-    position: fixed;
-    width: 100%;
-    top: 0;left: 0;
-    z-index: 1000;
-    box-shadow:var(--box-shadow);
-    
-    align-items: center;
-    justify-content: center;
-}
-.header .wrapper{
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-between;
-    
-    width: 93%;
-    
+.header {
+  background-color: var(--bg-color);
+  color: var(--black);
+  display: flex;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
 
+  align-items: center;
+  justify-content: center;
 }
-.header .wrapper .logo{
-    
-    font-size: 2rem;
-    font-weight: 7600;
-    box-shadow: var(--box-shadow);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    
+.header .wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 93%;
+}
+.header .wrapper .logo {
+  font-size: 2rem;
+  font-weight: 7600;
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.header .wrapper  ul{
-    list-style: none;
-    display: flex;
-    column-gap: 8%;
-    flex: 1;
-    align-items: center;
-    justify-content: flex-end;    
+.header .wrapper ul {
+  list-style: none;
+  display: flex;
+  column-gap: 8%;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
 }
 .menu {
-    width: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: var(--border);
-    background: var(--bg-color);
-    border-radius: 0.3rem;
-    cursor: pointer;
-    transition: 0.4s;
-
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: var(--border);
+  background: var(--bg-color);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.menu span{
-    width: 90%;
-    height: 0.2rem;
-    background-color: var(--black);
-    margin: 0.2rem auto;
-    transition: 0.4s;
-    transform-origin: 0.6rem;
+.menu span {
+  width: 90%;
+  height: 0.2rem;
+  background-color: var(--black);
+  margin: 0.2rem auto;
+  transition: 0.4s;
+  transform-origin: 0.6rem;
 }
-.activeMenu span:nth-child(2){
-    opacity: 0;
+.activeMenu span:nth-child(2) {
+  opacity: 0;
 }
-.activeMenu span:first-child{
-    transform: rotate(45deg);
+.activeMenu span:first-child {
+  transform: rotate(45deg);
 }
-.activeMenu span:last-child{
-    transform: rotate(-45deg);
+.activeMenu span:last-child {
+  transform: rotate(-45deg);
 }
-.navBar{
-    height: calc(100% - 70px);
-    position: fixed;
-    top: 70px;
-    right: -50rem;
-    width: 40rem;
-    background: var(--bg-color);
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    z-index: 100;
-    transition: 0.5s;
+.navBar {
+  height: calc(100% - 70px);
+  position: fixed;
+  top: 70px;
+  right: -50rem;
+  width: 40rem;
+  background: var(--bg-color);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+  transition: 0.5s;
 }
-.navActive{
-    right:0;
+.navActive {
+  right: 0;
 }
-.navBar>*{
-    width: 70%;
-    text-align: center;
-    font-size: 1.55rem;
-    padding: 0.5rem;
-    margin: 1rem 15%;
-    text-decoration: none;
-    color: var(--black);
-    background: var(--bg-color);
-    box-shadow: var(--box-shadow);
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: 0.4s;
+.navBar > * {
+  width: 70%;
+  text-align: center;
+  font-size: 1.55rem;
+  padding: 0.5rem;
+  margin: 1rem 15%;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.navBar>*:hover{
-    box-shadow: var(--box-shadow-inset);
+.navBar > *:hover {
+  box-shadow: var(--box-shadow-inset);
 }
 
-
-
-
-
-
-
-
-
-
-ul li{
-    justify-content: flex-end;
-    font-size: 1.4rem;
-    color: var(--black);
-    padding: 0.4rem;
-    border-radius: 0.3rem;
-    transition: 0.5s;
-    box-shadow: var(--box-shadow);
-    cursor: pointer;
+ul li {
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  color: var(--black);
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 ul li a {
-    color: var(--black);
-    font-size: 1.2rem;
-    text-decoration: none;
-    
+  color: var(--black);
+  font-size: 1.2rem;
+  text-decoration: none;
 }
-ul li:hover{
-    
-    background-color: var(--green);
+ul li:hover {
+  background-color: var(--green);
 }
