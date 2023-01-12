@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import Img from "./man.png";
+import Img from "./best.png";
 import { Link } from "react-router-dom";
 
 import {
