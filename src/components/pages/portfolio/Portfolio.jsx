@@ -4,6 +4,7 @@ import { GitHub, Tab } from "@material-ui/icons";
 
 import projectImage from "./projectImage.jpg";
 import khs from "./khs.png";
+import ecommerce from "./ecommerce.png";
 
 export default function Portfolio() {
   const imgSrc = projectImage;
@@ -20,9 +21,9 @@ export default function Portfolio() {
     {
       name: "Dream Fashion House",
       title: "a ecommerce web app",
-      img: imgSrc,
-      live: "",
-      frontend: "",
+      img: ecommerce,
+      live: "https://e-commerce-liard-mu.vercel.app/",
+      frontend: "https://github.com/dev-moshiur/E-commerce",
       backend: "",
     },
     {
