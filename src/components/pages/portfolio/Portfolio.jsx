@@ -5,6 +5,7 @@ import { GitHub, Tab } from "@material-ui/icons";
 import projectImage from "./projectImage.jpg";
 import khs from "./khs.png";
 import ecommerce from "./ecommerce.png";
+import seba from "./seba.png";
 
 export default function Portfolio() {
   const imgSrc = projectImage;
@@ -37,9 +38,9 @@ export default function Portfolio() {
     {
       name: "Doctors Portal",
       title: "a hospitals web app",
-      img: imgSrc,
-      live: "",
-      frontend: "",
+      img: seba,
+      live: "https://doctors-portal-beta.vercel.app/",
+      frontend: "https://github.com/dev-moshiur/doctors-portal",
       backend: "",
     },
   ];
