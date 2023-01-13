@@ -20,10 +20,17 @@ export default function Home() {
           I'M <span className="name">Moshiur Rahman</span>
         </span>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          deserunt aspernatur fugiat minus enim ullam repudiandae sint sed
-          magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Necessitatibus, at.
+          I am a Mern stack devaloper.
+          From an early age I had always been interested in
+          programming and after two years of hardwork, I converted my interest to skills.
+          I am always interested in learning new technologies. I always ready
+          to work hard and complete the assigned tasks within the allocated time
+          maintaining the required standards. My key strengths are leadership
+          experience, creativity, troubleshooting skills and quick problem solving 
+          ability.I am passionate about React,Node . my goal to acquire more knowledge and practical 
+          experience.Having an excellent communication skills and negotiation skills,I am very interested to
+          work with rumored worldwide organizations.
+                   
         </p>
         <a href="#about" className="btn">
           about me{" "}
