@@ -27,8 +27,8 @@ export default function Home() {
           to work hard and complete the assigned tasks within the allocated time
           maintaining the required standards. My key strengths are leadership
           experience, creativity, troubleshooting skills and quick problem solving 
-          ability.I am passionate about React,Node . my goal to acquire more knowledge and practical 
-          experience.Having an excellent communication skills and negotiation skills,I am very interested to
+          ability.I am passionate about React,Node .My goal is to acquire more knowledge and practical 
+          experience.Having an excellent communication and negotiation skills,I am very interested to
           work with rumored worldwide organizations.
                    
         </p>
