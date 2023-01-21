@@ -7,6 +7,7 @@ export default function Skills() {
       skillType: "Frontend",
       skillName: "HTML5",
       skillLavel: "intermediate",
+      percent:95,
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -14,7 +15,8 @@ export default function Skills() {
       skillId: "2",
       skillType: "Frontend",
       skillName: "CSS3",
-      skillLavel: "intermediate",
+      percent:90,
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -22,7 +24,8 @@ export default function Skills() {
       skillId: "3",
       skillType: "Frontend",
       skillName: "SASS",
-      skillLavel: "intermediate",
+      percent:60,
+      skillLavel: "Basic",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -30,7 +33,8 @@ export default function Skills() {
       skillId: "4",
       skillType: "Frontend",
       skillName: "Bootstrap",
-      skillLavel: "intermediate",
+      skillLavel: "Basic",
+      percent:65,
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -39,7 +43,8 @@ export default function Skills() {
       skillId: "5",
       skillType: "Frontend",
       skillName: "Javascript",
-      skillLavel: "intermediate",
+      percent:88,
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -47,7 +52,8 @@ export default function Skills() {
       skillId: "5",
       skillType: "Frontend",
       skillName: "Typescript",
-      skillLavel: "intermediate",
+      skillLavel: "Basic",
+      percent:65,
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -57,61 +63,68 @@ export default function Skills() {
       skillType: "Frontend",
 
       skillName: "ReactJs",
-      skillLavel: "intermediate",
+      percent:85,
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "6",
       skillType: "Frontend",
+      percent:75,
 
       skillName: "NextJs",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "6",
       skillType: "Frontend",
+      percent:70,
 
       skillName: "Redux",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "1",
       skillType: "Backend",
+      percent:70,
 
       skillName: "NodeJs",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "2",
       skillType: "Backend",
+      percent:85,
 
       skillName: "ExpressJs",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "3",
       skillType: "Backend",
+      percent:85,
 
       skillName: "MongoDB",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
     {
       skillId: "4",
       skillType: "Backend",
+      percent:90,
 
       skillName: "Mongoose",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -120,7 +133,8 @@ export default function Skills() {
       skillId: "6",
       skillType: "Backend",
       skillName: "MySQL",
-      skillLavel: "intermediate",
+      skillLavel: "Intermediate",
+      percent:95,
       skillDescribtion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!",
     },
@@ -136,11 +150,22 @@ export default function Skills() {
       <div class="box-container">
         {data.map((item, index) => (
           <div class="box">
-            <i>{index + 1}</i>
-            <h3>{item.skillName}</h3>
-            <span>{item.skillLavel}</span>
+            <div className="top">
+              <i>{index + 1}</i>
+              <h3>{item.skillName}</h3>
+              <span>{item.skillLavel}</span>
+            </div>
+            <div className="bottom">
+              <div className="full" style={{width : `${item.percent}%`}}>
+                <span>{`${item.percent}`}
+                  </span>
+                  <span>%</span>
+                
+              </div>
+            </div>
+            
 
-            <p>{item.skillDescribtion}</p>
+            
           </div>
         ))}
       </div>

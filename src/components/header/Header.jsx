@@ -20,7 +20,7 @@ export default function Header() {
     <>
       <div className="header">
         <div className="wrapper">
-          <div className="logo">Portfolio</div>
+          <div className="logo">Moshiur</div>
 
           <ul>
             <li onClick={() => changeDay()}>

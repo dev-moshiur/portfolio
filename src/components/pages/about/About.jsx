@@ -6,19 +6,19 @@ export default function About() {
   return (
     <div className="about" id="about">
       <h1>
-        {" "}
-        <span>about</span> me{" "}
+        
+        <span>about</span> me
       </h1>
 
       <div class="row">
         <div class="info">
           <h3>
-            {" "}
-            <span> Name : </span> Moshiur Rahman{" "}
+            
+            <span> Name : </span> Moshiur Rahman
           </h3>
           <h3>
             {" "}
-            <span> Age : </span> 21{" "}
+            <span> Age : </span> 21
           </h3>
 
           <h3>
@@ -46,13 +46,10 @@ export default function About() {
             <h3>porject completed</h3>
           </div>
 
-          <div className="box">
-            <span>430+</span>
-            <h3>happy clients</h3>
-          </div>
+          
 
           <div className="box">
-            <span>12+</span>
+            <span>2+</span>
             <h3>awards won</h3>
           </div>
         </div>

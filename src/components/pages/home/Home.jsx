@@ -33,7 +33,7 @@ export default function Home() {
                    
         </p>
         <a href="#about" className="btn">
-          about me{" "}
+          about me
         </a>
       </div>
       <div className="imgAndIcon">
