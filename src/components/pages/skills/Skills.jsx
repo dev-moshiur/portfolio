@@ -143,8 +143,8 @@ export default function Skills() {
   return (
     <div className="skills" id="skills">
       <h1>
-        {" "}
-        My <span>Skills</span>{" "}
+        
+        My <span>Skills</span>
       </h1>
 
       <div class="box-container">
