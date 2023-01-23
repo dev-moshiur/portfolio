@@ -1,9 +1,14 @@
 import { EmailSharp, HomeSharp, Phone } from "@material-ui/icons";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState ,useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const form = useRef();
   const [message, setMessage] = useState("");
 
@@ -31,33 +36,33 @@ export default function Contact() {
 
   return (
     <div className="contact-me" id="contact">
-      <h1>
+      <h1 data-aos="zoom-in">
         <span>Contact</span> Me
       </h1>
       <div className="contactFormAndAddress">
-        <div className="address">
-          <div>
+        <div className="address" >
+          <div data-aos="zoom-in">
             <span className="addressName">
               <EmailSharp />
               <i>Email</i>
             </span>
             dev.moshiurr@gmail.com
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <span className="addressName">
               <Phone />
               <i>Number</i>
             </span>
             +880 1725256642
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <span className="addressName">
               <Phone />
               <i>Number</i>
             </span>
             +880 01885355627
           </div>
-          <div>
+          <div data-aos="zoom-in">
             <span className="addressName">
               <HomeSharp />
               <i>address</i>
@@ -65,7 +70,7 @@ export default function Contact() {
             Nijpara, Birgonj, Dinajpur
           </div>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="contactForm">
+        <form data-aos="zoom-in" ref={form} onSubmit={sendEmail} className="contactForm">
           <input placeholder="your name.." type="text" name="name" id="name" />
           <input
             placeholder="your email"

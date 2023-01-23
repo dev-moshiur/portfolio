@@ -75,21 +75,25 @@
 
       box-shadow: var(--box-shadow);
       height: 5rem;
-
-      & > * {
-        color: var(--green);
-        margin: 0px 2rem;
-        padding: 0.4rem;
-        transform: scale(1.5);
-        border: var(--border);
-        box-shadow: var(--box-shadow);
-        border-radius: 50%;
-
-        &:hover {
-          box-shadow: var(--box-shadow-inset);
-          color: blue;
+      a{
+        text-decoration: none;
+        & > * {
+          color: var(--green);
+          margin: 0px 2rem;
+          padding: 0.4rem;
+          transform: scale(1.5);
+          border: var(--border);
+          box-shadow: var(--box-shadow);
+          border-radius: 50%;
+  
+          &:hover {
+            box-shadow: var(--box-shadow-inset);
+            color: blue;
+          }
         }
       }
+
+      
     }
   }
 }

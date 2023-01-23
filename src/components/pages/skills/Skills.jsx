@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./skills.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Skills() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const data = [
     {
       skillId: "1",
@@ -142,14 +147,14 @@ export default function Skills() {
 
   return (
     <div className="skills" id="skills">
-      <h1>
+      <h1 data-aos="zoom-in">
         
         My <span>Skills</span>
       </h1>
 
       <div class="box-container">
         {data.map((item, index) => (
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up">
             <div className="top">
               <i>{index + 1}</i>
               <h3>{item.skillName}</h3>

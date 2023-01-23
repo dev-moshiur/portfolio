@@ -1,13 +1,18 @@
 import "./portfolio.scss";
-import React from "react";
+import React,{useEffect} from "react";
 import { GitHub, Tab } from "@material-ui/icons";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import projectImage from "./projectImage.jpg";
 import khs from "./khs.png";
 import ecommerce from "./ecommerce.png";
 import seba from "./seba.png";
 
 export default function Portfolio() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const imgSrc = projectImage;
 
   const projects = [
@@ -46,12 +51,12 @@ export default function Portfolio() {
   ];
   return (
     <div className="portfolio" id="portfolio">
-      <h1>
-        My <span>Portfolio</span>
+      <h1 data-aos="zoom-in">
+        My <span>Projects</span>
       </h1>
       <div className="boxContainer">
         {projects.map((item) => (
-          <div className="boxs">
+          <div className="boxs" data-aos="zoom-out-up">
             <div className="imgHolder">
               <img src={item.img} alt="" />
             </div>
