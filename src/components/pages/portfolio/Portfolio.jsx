@@ -8,6 +8,7 @@ import projectImage from "./projectImage.jpg";
 import khs from "./khs.png";
 import ecommerce from "./ecommerce.png";
 import seba from "./seba.png";
+import ReactQuizeApp from "./ReactQuizeApp.png";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -35,9 +36,9 @@ export default function Portfolio() {
     {
       name: "Quiz Master",
       title: "a quiz web app",
-      img: imgSrc,
-      live: `https://quiz-mastar-beta.vercel.app`,
-      frontend: `https://github.com/dev-moshiur/quiz-app-client`,
+      img: ReactQuizeApp,
+      live: `https://quiz-master-tau.vercel.app/`,
+      frontend: `https://github.com/dev-moshiur/quiz-master`,
       backend: `https://github.com/dev-moshiur/quiz-app-api`,
     },
     {
