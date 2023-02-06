@@ -42,6 +42,14 @@ export default function Portfolio() {
       backend: `https://github.com/dev-moshiur/quiz-app-api`,
     },
     {
+      name: "Publish Result",
+      title: "a result publishing web app",
+      img: `https://www.site-shot.com/cached_image/dN8BAKY9Ee21XwJCrBEABA`,
+      live: `https://result-admin.vercel.app`,
+      frontend: `https://github.com/dev-moshiur/result-admin.git`,
+      backend: `https://github.com/dev-moshiur/school-management-api`,
+    },
+    {
       name: "Doctors Portal",
       title: "a hospitals web app",
       img: seba,
