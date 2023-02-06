@@ -53,7 +53,7 @@ export default function Portfolio() {
       name: "Doctors Portal",
       title: "a hospitals web app",
       img: seba,
-      live: "https://doctors-portal-beta.vercel.app/",
+      live: "https://doctors-portal-k9ugbh16j-masud42215639-gmailcom.vercel.app/",
       frontend: "https://github.com/dev-moshiur/doctors-portal",
       backend: "",
     },
